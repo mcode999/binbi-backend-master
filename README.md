@@ -1,3 +1,5 @@
+# AIGC智能图表-后端
+
 ## 项目介绍
 
 基于React+Spring Boot+MQ+AIGC的智能数据分析平台。
