@@ -10,26 +10,22 @@ spring:
       matching-strategy: ant_path_matcher
   # session 配置
   session:
-    # todo 取消注释开启分布式 session（须先配置 Redis）
     # store-type: redis
     # 30 天过期
     timeout: 2592000
   # 数据库配置
-  # todo 需替换配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/intelli_bi_db
     username: st01
     password: 123st01.123
   # Redis 配置
-  # todo 需替换配置，然后取消注释
   redis:
     database: 1
-    host: www.rsbin.top
+    host: localhost
     port: 7392
     timeout: 5000
   # Elasticsearch 配置
-  # todo 需替换配置，然后取消注释
   #  elasticsearch:
   #    uris: http://localhost:9200
   #    username: root
@@ -65,7 +61,6 @@ mybatis-plus:
 # 微信相关
 wx:
   # 微信公众平台
-  # todo 需替换配置
   mp:
     token: xxx
     aesKey: xxx
@@ -79,20 +74,17 @@ wx:
         port: 6379
       type: Memory
   # 微信开放平台
-  # todo 需替换配置
   open:
     appId: xxx
     appSecret: xxx
 # 对象存储
-# todo 需替换配置
 cos:
   client:
     accessKey: xxx
     secretKey: xxx
     region: xxx
     bucket: xxx
-# 鱼聪明 AI 配置（https://yucongming.com/）
 yuapi:
   client:
-    access-key: lt0x385kdu7rdrw9e441qu2ggdvlpi3j
-    secret-key: mdz73k3s47wy7sw8f4qocg6g6dvskiyi
+    access-key: xxx
+    secret-key: xxx
